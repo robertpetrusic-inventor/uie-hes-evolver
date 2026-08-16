@@ -3,3 +3,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+
+# External ISCAS85 benchmark files are fetched and hash-verified.
+benchmarks/iscas85/c432.bench
+benchmarks/iscas85/c432.v

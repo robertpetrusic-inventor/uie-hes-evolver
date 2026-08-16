@@ -1,0 +1,17 @@
+{
+  "bench_vs_verilog_exact": 8192,
+  "benchmark": "ISCAS85 c432",
+  "bitpacked_gate_dispatches": 160,
+  "bitpacked_vs_verilog_exact": 8192,
+  "gates": 160,
+  "inputs": 36,
+  "modeled_dispatch_reduction": 0.9998779296875,
+  "outputs": 7,
+  "scalar_gate_dispatches": 1310720,
+  "sha256": {
+    "c432.bench": "c3a37ac6850aa737f2705f9f3868e1f4ccfa6a6cc1b1a21d3095ac73191e258d",
+    "c432.v": "5f57a91b4f2f2b4cacf47414e961a4c32aad915f961b116c379725f262690043"
+  },
+  "structural_cross_format_exact": true,
+  "verification_vectors": 8192
+}

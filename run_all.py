@@ -11,6 +11,7 @@ PROGRAMS = [
     ROOT / "examples" / "test_03_verifier_regression.py",
     ROOT / "examples" / "test_04_mutation_evolver.py",
     ROOT / "examples" / "test_05_eight_puzzle.py",
+    ROOT / "examples" / "test_06_iscas85_c432.py",
 ]
 
 
