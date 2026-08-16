@@ -1,0 +1,37 @@
+
+=== test_01_evolver_math.py ===
+expanded     accuracy=11/11 cost=55 verified=True
+factored     accuracy=11/11 cost=22 verified=True
+wrong_fast   accuracy=1/11 cost=22 verified=False
+WINNER=factored
+
+=== test_02_iscas85_c17.py ===
+vectors=32 exact_matches=32/32
+scalar_gate_dispatches=192
+bitpacked_gate_dispatches=6
+dispatch_reduction=96.875%
+
+=== test_03_verifier_regression.py ===
+optimized_solver: PASS=True, failures=0
+broken_solver:    PASS=False, failures=7
+
+=== test_04_mutation_evolver.py ===
+parent=iterative_sum verified=True cost=111154
+child=poly_horner_deg2[0,1/2,1/2]            verified=True  accuracy=8/8 cost=32
+child=perturb_c0_-1[-1,1/2,1/2]              verified=False accuracy=0/8 cost=32
+child=perturb_c0_+1[1,1/2,1/2]               verified=False accuracy=0/8 cost=32
+child=perturb_c1_-1[0,-1/2,1/2]              verified=False accuracy=0/8 cost=32
+child=perturb_c1_+1[0,3/2,1/2]               verified=False accuracy=0/8 cost=32
+child=perturb_c2_-1[0,1/2,-1/2]              verified=False accuracy=0/8 cost=32
+child=perturb_c2_+1[0,1/2,3/2]               verified=False accuracy=0/8 cost=32
+PROMOTED=poly_horner_deg2[0,1/2,1/2]
+
+=== test_05_eight_puzzle.py ===
+case=1 optimal_moves= 2 BFS_expanded=     7 A*_expanded=     3
+case=2 optimal_moves=20 BFS_expanded= 62797 A*_expanded=   283
+case=3 optimal_moves=31 BFS_expanded=181440 A*_expanded= 21198
+total_BFS_expanded=244244
+total_A*_expanded=21484
+expanded_state_reduction=91.204%
+
+ALL TEST PROGRAMS PASSED

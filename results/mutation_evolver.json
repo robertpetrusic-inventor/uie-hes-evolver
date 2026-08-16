@@ -1,0 +1,103 @@
+{
+  "children": [
+    {
+      "correct": 8,
+      "mutation": "infer_polynomial_horner",
+      "name": "poly_horner_deg2[0,1/2,1/2]",
+      "parent": "iterative_sum",
+      "total": 8,
+      "total_cost": 32,
+      "verified": true
+    },
+    {
+      "correct": 0,
+      "mutation": "perturb_coefficient_0_-1",
+      "name": "perturb_c0_-1[-1,1/2,1/2]",
+      "parent": "iterative_sum",
+      "total": 8,
+      "total_cost": 32,
+      "verified": false
+    },
+    {
+      "correct": 0,
+      "mutation": "perturb_coefficient_0_+1",
+      "name": "perturb_c0_+1[1,1/2,1/2]",
+      "parent": "iterative_sum",
+      "total": 8,
+      "total_cost": 32,
+      "verified": false
+    },
+    {
+      "correct": 0,
+      "mutation": "perturb_coefficient_1_-1",
+      "name": "perturb_c1_-1[0,-1/2,1/2]",
+      "parent": "iterative_sum",
+      "total": 8,
+      "total_cost": 32,
+      "verified": false
+    },
+    {
+      "correct": 0,
+      "mutation": "perturb_coefficient_1_+1",
+      "name": "perturb_c1_+1[0,3/2,1/2]",
+      "parent": "iterative_sum",
+      "total": 8,
+      "total_cost": 32,
+      "verified": false
+    },
+    {
+      "correct": 0,
+      "mutation": "perturb_coefficient_2_-1",
+      "name": "perturb_c2_-1[0,1/2,-1/2]",
+      "parent": "iterative_sum",
+      "total": 8,
+      "total_cost": 32,
+      "verified": false
+    },
+    {
+      "correct": 0,
+      "mutation": "perturb_coefficient_2_+1",
+      "name": "perturb_c2_+1[0,1/2,3/2]",
+      "parent": "iterative_sum",
+      "total": 8,
+      "total_cost": 32,
+      "verified": false
+    }
+  ],
+  "claim_scope": "behavior-preserving optimization demonstration; not an external math benchmark",
+  "development_samples": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "experiment": "mutation_evolver_triangular_v0.1",
+  "frozen_holdout": [
+    4,
+    7,
+    13,
+    31,
+    100,
+    999,
+    10000,
+    100000
+  ],
+  "parent": {
+    "correct": 8,
+    "mutation": "seed",
+    "name": "iterative_sum",
+    "parent": null,
+    "total": 8,
+    "total_cost": 111154,
+    "verified": true
+  },
+  "promoted": {
+    "correct": 8,
+    "mutation": "infer_polynomial_horner",
+    "name": "poly_horner_deg2[0,1/2,1/2]",
+    "parent": "iterative_sum",
+    "total": 8,
+    "total_cost": 32,
+    "verified": true
+  }
+}

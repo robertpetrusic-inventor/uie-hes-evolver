@@ -1,0 +1,8 @@
+[project]
+name = "uie-hes-evolver-starter"
+version = "0.2.0"
+description = "Minimal correctness-first evolutionary solver experiments"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
