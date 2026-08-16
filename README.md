@@ -1,5 +1,21 @@
 # UIE / HES Evolver — Correctness-First Evolutionary Solver
 
+![CI](https://github.com/robertpetrusic-inventor/uie-hes-evolver/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+## Results at a glance
+
+| Test | Verification | Result |
+|---|---|---:|
+| Correctness-first arithmetic selection | Frozen holdout | 11/11 PASS |
+| ISCAS85 c17 | Exhaustive 32-vector equivalence | 32/32 PASS |
+| Mutation Evolver | Frozen holdout | 8/8 PASS |
+| Invalid coefficient mutants | Independent verifier | 6/6 rejected |
+| 8-puzzle A* vs BFS | Replay + optimality | 3/3 PASS |
+| 8-puzzle search cost | Expanded states | −91.204% |
+
+
 **UIE / HES Evolver** is an open-source Python framework for **evolutionary algorithms, program synthesis, automated reasoning, search optimization, benchmarking, and independent verification**.
 
 It generates candidate solution methods, tests them against frozen holdouts and public benchmarks, rejects regressions, and promotes only **verified improvements**.
