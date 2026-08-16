@@ -1,14 +1,12 @@
-# UIE / HES Evolver — public starter v0.2
+# UIE / HES Evolver — Correctness-First Evolutionary Solver
 
-A small, reproducible **correctness-first evolutionary solver laboratory**.
+**UIE / HES Evolver** is an open-source Python framework for **evolutionary algorithms, program synthesis, automated reasoning, search optimization, benchmarking, and independent verification**.
 
-The public claim is intentionally narrow:
+It generates candidate solution methods, tests them against frozen holdouts and public benchmarks, rejects regressions, and promotes only **verified improvements**.
 
-> Generate candidate solution methods, reject candidates that fail independent
-> verification, and only then promote a verified improvement.
+> **Generate → Test → Verify → Compare → Promote → Record lineage**
 
-This repository does **not** claim AGI or universal scientific discovery.
-Synthetic/mechanism tests are separated from public/external benchmark claims.
+Current public starter: **v0.2**. The project focuses on reproducible, benchmark-driven algorithm evolution. It does **not** claim AGI or universal scientific discovery, and synthetic mechanism tests are kept separate from external benchmark evidence.
 
 ## Quick start
 
