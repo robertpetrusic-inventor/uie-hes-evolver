@@ -1,0 +1,68 @@
+{
+  "logic_mastery": {
+    "version": "logic-core-a-v0.1",
+    "passed": 58,
+    "total": 58,
+    "score": 1.0,
+    "locked": true,
+    "evidence_sha256": "eded9bc8e8c132ceeb4cbadf1ff3b3c21a588d9d04e78e481eb4a42108527c80",
+    "execution_axis": "EXECUTED_CODE",
+    "data_axis": "EXHAUSTIVE_FINITE_TRUTH_TABLES",
+    "verification_axis": "INDEPENDENT_TRUTH_TABLE_ORACLE"
+  },
+  "chess_stage": "CHESS_UNLOCKED_AFTER_LOGIC_100",
+  "chess_smoke": {
+    "passed": 5,
+    "total": 5,
+    "rows": [
+      {
+        "case": "fork",
+        "move": "d5c7",
+        "expected": "FORK",
+        "found": [
+          "CHECK",
+          "FORK"
+        ],
+        "passed": true
+      },
+      {
+        "case": "pin",
+        "move": "a4b5",
+        "expected": "PIN",
+        "found": [
+          "PIN"
+        ],
+        "passed": true
+      },
+      {
+        "case": "skewer",
+        "move": "a2b3",
+        "expected": "SKEWER",
+        "found": [
+          "SKEWER"
+        ],
+        "passed": true
+      },
+      {
+        "case": "discovered",
+        "move": "a2b3",
+        "expected": "DISCOVERED_ATTACK",
+        "found": [
+          "DISCOVERED_ATTACK"
+        ],
+        "passed": true
+      },
+      {
+        "case": "mate",
+        "move": "g6g7",
+        "expected": "MATE",
+        "found": [
+          "CHECK",
+          "MATE"
+        ],
+        "passed": true
+      }
+    ],
+    "evidence_scope": "INTERNAL_AUTHORED_REGRESSION_NOT_EXTERNAL_CHESS_STRENGTH"
+  }
+}

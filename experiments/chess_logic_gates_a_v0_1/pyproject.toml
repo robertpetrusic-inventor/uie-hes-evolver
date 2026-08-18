@@ -1,0 +1,9 @@
+[project]
+name = "chess-logic-gates-a"
+version = "0.1.0"
+description = "Verified digital-logic mastery gate followed by explainable chess-tactic circuits"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

@@ -1,0 +1,106 @@
+{
+  "architecture": "A_HIERARCHICAL_LOGIC_THEN_CHESS",
+  "execution_order": [
+    "LOGIC_ONLY_PROCESS",
+    "FROZEN_HASH_LOCK",
+    "CHESS_ONLY_PROCESS",
+    "POST_HASH_CHECK"
+  ],
+  "separate_processes": true,
+  "shared_mutable_memory": false,
+  "deterministic_environment": true,
+  "logic": {
+    "phase": "LOGIC_ONLY",
+    "certificate": {
+      "version": "logic-core-a-v0.1",
+      "passed": 58,
+      "total": 58,
+      "score": 1.0,
+      "locked": true,
+      "evidence_sha256": "eded9bc8e8c132ceeb4cbadf1ff3b3c21a588d9d04e78e481eb4a42108527c80",
+      "execution_axis": "EXECUTED_CODE",
+      "data_axis": "EXHAUSTIVE_FINITE_TRUTH_TABLES",
+      "verification_axis": "INDEPENDENT_TRUTH_TABLE_ORACLE"
+    },
+    "logic_source_hashes": {
+      "chess_logic/gates.py": "da66016e08298a00bacfd3dd5347ed2b74dc7ade9ddc5873d9886ee7450b0aed",
+      "chess_logic/mastery.py": "622f683c96972c7d3420fc084d5abac985e94f543b335c3495394f5e9fa57b50"
+    },
+    "loaded_project_modules": [
+      "chess_logic.gates",
+      "chess_logic.mastery"
+    ],
+    "forbidden_chess_modules": [],
+    "no_chess_imports": true,
+    "lock_sha256": "77e7839d15fc98ee1044cd106a1e31bc6ade27735836bb5a53c90773f494928e"
+  },
+  "chess": {
+    "phase": "CHESS_AFTER_FROZEN_LOGIC",
+    "logic_lock_sha256": "77e7839d15fc98ee1044cd106a1e31bc6ade27735836bb5a53c90773f494928e",
+    "logic_hashes_before": {
+      "chess_logic/gates.py": "da66016e08298a00bacfd3dd5347ed2b74dc7ade9ddc5873d9886ee7450b0aed",
+      "chess_logic/mastery.py": "622f683c96972c7d3420fc084d5abac985e94f543b335c3495394f5e9fa57b50"
+    },
+    "logic_hashes_after": {
+      "chess_logic/gates.py": "da66016e08298a00bacfd3dd5347ed2b74dc7ade9ddc5873d9886ee7450b0aed",
+      "chess_logic/mastery.py": "622f683c96972c7d3420fc084d5abac985e94f543b335c3495394f5e9fa57b50"
+    },
+    "no_logic_backflow": true,
+    "chess_executed": true,
+    "chess_smoke": {
+      "passed": 5,
+      "total": 5,
+      "rows": [
+        {
+          "case": "fork",
+          "move": "d5c7",
+          "expected": "FORK",
+          "found": [
+            "CHECK",
+            "FORK"
+          ],
+          "passed": true
+        },
+        {
+          "case": "pin",
+          "move": "a4b5",
+          "expected": "PIN",
+          "found": [
+            "PIN"
+          ],
+          "passed": true
+        },
+        {
+          "case": "skewer",
+          "move": "a2b3",
+          "expected": "SKEWER",
+          "found": [
+            "SKEWER"
+          ],
+          "passed": true
+        },
+        {
+          "case": "discovered",
+          "move": "a2b3",
+          "expected": "DISCOVERED_ATTACK",
+          "found": [
+            "DISCOVERED_ATTACK"
+          ],
+          "passed": true
+        },
+        {
+          "case": "mate",
+          "move": "g6g7",
+          "expected": "MATE",
+          "found": [
+            "CHECK",
+            "MATE"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    "evidence_scope": "CLEAN_INTERNAL_REGRESSION_NOT_EXTERNAL_CHESS_STRENGTH"
+  },
+  "clean_loop_pass": true
+}
